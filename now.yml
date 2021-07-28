@@ -1,0 +1,17 @@
+plugin: servicenow.servicenow.now
+table: cmdb_ci_server
+fields: 
+  - ip_address
+  - classification
+  - fqdn
+  - hostname
+  - name
+  - location
+filter_results: classification=production
+selection_order: fqdn,host_name,name,ip_address
+keyed_groups:
+  - key: sn_location | lower
+    separator: ''
+compose:
+  ansible_host: sn_ip_address
+adminstrict: yes
