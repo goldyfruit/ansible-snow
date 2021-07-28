@@ -7,7 +7,7 @@ fields:
   - hostname
   - name
   - location
-filter_results: classification=production
+filter_results: classificationSTARTWITHproduction
 selection_order: fqdn,host_name,name,ip_address
 keyed_groups:
   - key: sn_location | lower
