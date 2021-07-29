@@ -14,4 +14,4 @@ keyed_groups:
     separator: ''
 compose:
   ansible_host: sn_ip_address
-adminstrict: yes
+strict: yes
